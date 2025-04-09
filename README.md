@@ -15,6 +15,7 @@ This is a weather app that fetches data from an IP API, a geoloation API, and a 
 * HTML/CSS
 * JavaScript
 * CSS
+* Figma
 
 ## Acknowledgements
 * API Resources:
