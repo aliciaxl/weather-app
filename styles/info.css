@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'Pixeboy';
+  src: url('../fonts/Pixeboy.ttf')format('truetype');
+}
+
+@font-face {
+  font-family: 'Pixelify Sans';
+  src: url('../fonts/PixelifySans.ttf')format('truetype');
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  height: 28rem;
+  border-radius: 8px;
+  /* border: 1px solid rgb(53, 136, 195); */
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#weather-info{
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#widget-header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(217, 230, 249);
+  height: 68px;
+  padding: 0rem 1.2rem; 
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: 2.8px solid rgb(53, 136, 195);
+}
+
+h1 {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(53, 136, 195);
+}
+
+button {
+  font-family: 'Pixeboy';
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(53, 136, 195);
+  border-color: rgb(53, 136, 195);
+  border-style: solid;
+  margin: 0px 2px;
+  cursor: pointer;
+}
+
+#condition-container {
+  position: relative;
+  display: flex;
+  top: 294px;
+  max-height: 7rem;
+}
+
+#condition {
+  padding: 16px 28px;
+  margin: 12px auto;
+  border: 2.8px solid rgb(53, 136, 195);
+  border-radius: 12px;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 1.2rem;
+  color: rgb(53, 136, 195);
+  background-color: white;
+  z-index: 3;
+}
+
+#temp1 {
+  position: absolute;
+  top: 40px;
+  left: 13px;
+  font-family: 'Pixeboy';
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  z-index: 0;
+  animation: moveUpDown1 3s ease-in-out infinite alternate;
+}
+
+#temp2 {
+  position: absolute;
+  top: 128px;
+  left: 292px;
+  font-family: 'Pixeboy';
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  z-index: 0;
+  animation: moveUpDown2 2.4s ease-in-out infinite alternate-reverse;
+}
+
+#temp-main {
+  position: absolute;
+  top: -38px;
+  left: 31px;
+  font-size: 4.4rem;
+  transform: rotate(-3deg);
+  z-index: 2;
+}
+
+#temp-side {
+  position: absolute;
+  top: -32px;
+  left: 25px;
+  font-size: 3.6rem;
+  transform: rotate(8deg);
+  z-index: 0;
+}

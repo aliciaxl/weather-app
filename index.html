@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles/info.css">
+    <link rel="stylesheet" href="styles/assets.css">
+</head>
+<body>
+    <div id="widget">
+        <div id="widget-header">
+            <h1>Weather</h1>
+            <div id="temp-btns">
+                <button id="fahrenheit-btn">°F</button>
+                <button id="celsius-btn">°C</button>
+            </div>
+        </div>
+        <div id="image-container">
+            <img id="clouds">
+            <div id="stars">
+                <img id="star1" src="assets/decorations/star1.png" alt="bear">
+                <img id="star2" src="assets/decorations/star2.png" alt="bear">
+                <img id="star3" src="assets/decorations/star3.png" alt="bear">
+            </div>
+            <div id="bubbles">
+                <div class="temp-reading" id="temp1">
+                    <img class="big-bubble" id="big-bubble1" src="assets/decorations/big-bubble.png" alt="bubble">
+                    <p class="temp" id="temp-main">68</p>
+                </div>
+                <div class="temp-reading" id="temp2">
+                    <img class="big-bubble" id="big-bubble2" src="assets/decorations/big-bubble.png" alt="bubble">
+                    <p class="temp" id="temp-side">68</p>
+                </div>
+                <img id="small-bubble1" src="assets/decorations/small-bubble.png" alt="bubble1">
+                <img id="small-bubble2" src="assets/decorations/small-bubble.png" alt="bubble2">
+                <img id="small-bubble3" src="assets/decorations/small-bubble.png" alt="bubble3">
+                <img id="small-bubble4" src="assets/decorations/small-bubble.png" alt="bubble4">
+            </div>
+            <img id="bear" src="assets/bear/bear.png" alt="bear">
+            <div id="condition-container">
+                <p id="condition">It's scattered clouds today!</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

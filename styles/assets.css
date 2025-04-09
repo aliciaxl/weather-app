@@ -1,0 +1,188 @@
+#image-container {
+    
+    position: relative;
+    width: 24.0625rem;
+    height: 23.6875rem;
+    flex-shrink: 0;
+    aspect-ratio: 385/379;
+    overflow: hidden;
+    text-align: center;
+}
+
+#clouds {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+}
+
+#star1 {
+    position: absolute;
+    top: 37px;
+    left: 8px;
+    width: 1.5625rem;
+    height: 2.3125rem;
+    flex-shrink: 0;
+    aspect-ratio: 25/37;
+    z-index: 0;
+}
+
+#star2 {
+    position: absolute;
+    top: 175px;
+    left: 292px;
+    width: 0.81481rem;
+    height: 1.375rem;
+    flex-shrink: 0;
+    aspect-ratio: 13.04/22.00;
+    z-index: 0;
+}
+
+#star3 {
+    position: absolute;
+    top: 0px;
+    left: 307px;
+    width: 0.875rem;
+    height: 1.125rem;
+    flex-shrink: 0;
+    aspect-ratio: 7/9;
+    z-index: 0;
+}
+
+#big-bubble1 {
+    width: 7.80494rem;
+    height: 7.75rem;
+    flex-shrink: 0;
+    aspect-ratio: 124.88/124.00;
+    transform: rotate(-3deg);
+}
+
+#big-bubble2 {
+    width: 6.4375rem;
+    height: 6.375rem;
+    flex-shrink: 0;
+    aspect-ratio: 116.82/116.00;
+    transform: rotate(8deg);
+}
+
+#small-bubble1 {
+    position: absolute;
+    opacity: 0.7;
+    top: 314px;
+    left: 16px;
+    width: 2.22256rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    aspect-ratio: 35.56/36.00;
+    z-index: 2;
+    animation: moveUpDown3 3s ease-in-out infinite alternate-reverse;
+}
+
+#small-bubble2 {
+    position: absolute;
+    opacity: 0.7;
+    top: -18px;
+    left: 103px;
+    width: 2.22256rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    aspect-ratio: 35.56/36.00;
+    z-index: 0;
+    animation: moveUpDown4 2s ease-in-out infinite alternate-reverse;
+}
+
+#small-bubble3 {
+    position: absolute;
+    opacity: 0.7;
+    top: 118px;
+    left: 248px;
+    width: 2.22256rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    aspect-ratio: 35.56/36.00;
+    z-index: 0;
+    animation: moveUpDown5 4s ease-in-out infinite alternate;
+}
+
+#small-bubble4 {
+    position: absolute;
+    opacity: 0.7;
+    top: 36px;
+    left: 310px;
+    width: 2.22256rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    aspect-ratio: 35.56/36.00;
+    z-index: 0;
+    animation: moveUpDown6 3.6s ease-in-out infinite alternate-reverse;
+}
+
+#bear {
+    position: absolute;
+    top: -54px;
+    left: 58px;
+    width: 16.875rem;
+    height: 22.5rem;
+    flex-shrink: 0;
+    aspect-ratio: 3/4;
+    z-index: 2;
+    animation: changeBearImage 7000ms infinite;
+}
+
+@keyframes moveUpDown1 {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(30px);  /* Moves the image 50px down */
+    }
+}
+
+@keyframes moveUpDown2 {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(20px);  /* Moves the image 50px down */
+    }
+}
+
+@keyframes moveUpDown3 {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(12px);  /* Moves the image 50px down */
+    }
+}
+
+@keyframes moveUpDown4 {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(16px);  /* Moves the image 50px down */
+    }
+}
+
+@keyframes moveUpDown5 {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(32px);  /* Moves the image 50px down */
+    }
+}
+
+@keyframes moveUpDown6 {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(10px);  /* Moves the image 50px down */
+    }
+}
+
+
+@keyframes changeBearImage {
+
+}
