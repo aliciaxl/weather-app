@@ -130,10 +130,9 @@ button {
   top: -40px;
   left: 28px;
   font-size: 4.4rem;
-  transform: rotate(-3deg);
   z-index: 2;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) rotate(-3deg);
 }
 
 #temp-side {
@@ -142,8 +141,7 @@ button {
   top: -32px;
   left: 25px;
   font-size: 3.6rem;
-  transform: rotate(8deg);
   z-index: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) rotate(8deg);
 }
