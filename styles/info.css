@@ -94,9 +94,16 @@ button {
   z-index: 3;
 }
 
+#temp-reading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 #temp1 {
   position: absolute;
-  top: 40px;
+  top: 42px;
   left: 13px;
   font-family: 'Pixeboy';
   font-style: normal;
@@ -120,18 +127,23 @@ button {
 
 #temp-main {
   position: absolute;
-  top: -38px;
-  left: 31px;
+  top: -40px;
+  left: 28px;
   font-size: 4.4rem;
   transform: rotate(-3deg);
   z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #temp-side {
+  display: flex;
   position: absolute;
   top: -32px;
   left: 25px;
   font-size: 3.6rem;
   transform: rotate(8deg);
   z-index: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
