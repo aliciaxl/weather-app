@@ -4,7 +4,8 @@ This is a weather app that fetches data from an IP API, a geoloation API, and a 
 
 ## Demo
 <p align="center">
- <img src="./assets/day-demo.gif" width="390" height="448" />&nbsp;&nbsp;&nbsp;&nbsp;<img src="./assets/night-demo.gif" width="390" height="448" />
+ <img src="./assets/day-demo.gif" width="390" height="448" style="margin: 20px"/>
+ <img src="./assets/night-demo.gif" width="390" height="448" style="margin: 20px"/>
 </p>
 
 
