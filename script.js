@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //Get day or night to display different app settings
     const now = new Date();
     const currentHour = now.getHours();
-    const isDayTime = currentHour > 6 && currentHour < 24;
+    const isDayTime = currentHour > 6 && currentHour < 20;
     const imageContainer = document.getElementById('image-container');
     const cloudLayer = document.getElementById('clouds');
     const bigBubble = document.getElementsByClassName('big-bubble');
