@@ -23,5 +23,5 @@ This is a weather app that fetches data from an IP API, a geoloation API, and a 
 ## Acknowledgements
 * API Resources:
   * [ipify](https://www.ipify.org/) for IP address
-  * [ip-api](https://ip-api.com/) for geolocation
+  * [geolocation-db](https://geolocation-db.com/) for geolocation
   * [Open-meteo](https://open-meteo.com/) for weather data
