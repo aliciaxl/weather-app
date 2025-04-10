@@ -4,33 +4,32 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch('https://api.ipify.org?format=json')
     .then(response => response.json())
     .then(data => {
-        const ipAddress = data.ip;
+        const IP_ADDRESS = data.ip;
 
-        //Call geolocation API ot get user's location lat/lon
-        fetch(`http://ip-api.com/json/${ipAddress}`)
+        //Call geolocation API ot get user's location latitude/longitude
+        fetch(`https://geolocation-db.com/json/${IP_ADDRESS}&position=true`)
         .then(response => response.json())
         .then(data => {
-            const lat = data.lat;
-            const lon = data.lon;
+            const latitude = data.latitude;
+            const longitude = data.longitude;
 
-            getWeather(lat, lon);
+            getWeather(latitude, longitude);
         })
         .catch(error => {
-            console.log('Error fetching location data');
+            console.log('Error fetching location data', error);
         })
 
     })
     .catch(error => {
-        console.log('Error fetching IP data');
-        alert('Error fetching IP data');
+        console.log('Error fetching IP data', error);
     });
 
     let fahrenheit;
     let celsius;
 
-    function getWeather(lat, lon){
+    function getWeather(latitude, longitude){
 
-        const apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`;
+        const apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`;
         
         fetch(apiUrl)
         .then(response => response.json())
@@ -91,8 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('condition').textContent = `It's ${condition(weatherCode)} today!`;
         })
         .catch(error => {
-            console.log('Failed to fetch weather data');
-            alert('Failed to fetch weather data')
+            console.log('Failed to fetch weather data', error);
         })
     }
 
@@ -157,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let imgIndex = 0;
     let increasing = true;
 
-    bearImage.src = `asset/bear/${images[imgIndex]}`;
+    bearImage.src = `${images[imgIndex]}`;
 
     function changeImage() {
         bearImage.src = images[imgIndex];
